@@ -102,7 +102,7 @@ button:hover {
 
 @media only screen and (min-width: 641px) and (max-width: 1023px) {
     .container {
-        flex-direction: column;
+        flex-direction: row;
         height: auto;
     }
 
@@ -117,7 +117,7 @@ button:hover {
     }
 
     .sobre-a-loja {
-        flex-direction: column;
+        flex-direction: row;
         text-align: center;
     }
 
@@ -128,6 +128,22 @@ button:hover {
 
     .descricao h2 {
         margin-top: 20px;
+    }
+
+    .produtos {
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .produto {
+        flex: 0 1 calc(50% - 20px); /* Altera para 50% para ocupar metade da largura da coluna */
+        margin: 20px 0;
+    }
+
+    .imagem {
+        width: 385px;
+        height: 385px;
     }
 }
 
